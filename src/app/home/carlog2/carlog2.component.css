@@ -1,0 +1,9 @@
+img {
+    width: clamp(200px, 41.84100418410042vw, 1800px);
+    height: clamp(160px, 36.61087866108787vw, 1700px);
+}
+section {
+    /* background-color: green; */
+    width: auto;
+    height: auto;
+}

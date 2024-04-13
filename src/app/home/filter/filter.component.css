@@ -1,0 +1,112 @@
+input {
+    font-family: FontAwesome;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-family: MyFont;
+
+}
+input::placeholder {
+    padding-left: 5px;
+    color: rgb(128, 123, 123);
+}
+fa-icon {
+    color: #07aef5;
+}
+section{
+    /* background-color: red; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px 15px 25px, rgba(0, 0, 0, 0.3) 0px 5px 10px;
+    border-radius: 75px;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    min-height: 75px;
+    max-height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+section div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    /* background-color: green; */
+}
+label {
+    font-family: MyFont;
+    color: rgb(78, 76, 76);
+}
+button {
+    width: 120px;
+    border-radius: 75px;
+    transition: ease 0.5s;
+}
+button:hover {
+    background-color: rgb(78, 76, 76);
+    border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media screen and (min-width: 1095px) and (max-width: 1197px) {
+    section {
+        flex-direction: column;
+    }
+    button {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    section div{
+        /* background-color: rebeccapurple; */
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 1094px) {
+    div {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: red; */
+        width: 90% !important;
+        text-align: center;
+    }
+    input {
+        background-color: transparent;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        width: 200px;
+    }
+    fa-icon {
+        padding-left: 15px;
+        padding-bottom: 10px;
+    }
+    label {
+        width: 240px;
+        /* background-color: red; */
+        margin-top: 10px;
+        border: 1px solid rgb(88, 86, 86);
+        border-radius: 75px;
+        /* margin-left: 10px; */
+        
+    }
+    button {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    section {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: clamp(270px, 16.47489539748954vw, 400px);
+    }
+}

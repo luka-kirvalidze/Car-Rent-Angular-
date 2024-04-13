@@ -1,0 +1,192 @@
+image {
+    object-fit: cover;
+    margin: 0;
+}
+.card-img-top{
+    border-radius: 15px !important;
+}
+.plus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+#inCB {
+    margin-left: 0;
+    padding: 0;
+    /* background-color: red !important; */
+}
+.card {
+    border: none !important;
+    width: clamp(300px,  22.352315061202766vw, 450px) !important;
+    height: auto !important;
+    font-weight: 700 !important;
+}
+.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    padding: 50% !important;
+    font-family: MyFont;
+    border-radius: 75px;
+    padding: 0 !important;
+    transition: 0.7s;
+}
+.btn:hover {
+    background-color: #474545;
+    border: none;
+}
+h5 {
+    font-size: 20px;
+    color: #878484;
+}
+p {
+    font-size: 28px;
+}
+h1 {
+    color: #313131;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+section {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rebeccapurple; */
+    font-family: MyFont;
+    margin-top: 80px;
+}
+#inSect {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+    width: 100%;
+    /* background-color: red; */
+}
+
+p-carousel {
+    width: 75%;
+    margin: 0;
+    /* background-color: rebeccapurple; */
+}
+.product-item {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.product-image { 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); 
+    border-radius: 20px;
+    transition: 0.5s;
+} 
+.product-image:hover {
+    transform: scale(1.1) !important;
+    border-radius: 20px !important;
+    object-fit: cover !important;
+}
+::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+    background-color: #cac9c9 !important;
+    color: #474545;
+    border-radius: 50%;
+    font-size: 15px  !important;
+    margin: 0 !important;
+    transition: 0.5s;
+}
+::ng-deep .p-carousel .p-carousel-content .p-carousel-prev:hover {
+    background-color: #474545 !important;
+    color: white;
+    border-radius: 50%;
+    font-size: 15px  !important;
+    margin: 0 !important    ;
+}
+::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+    background-color: #cac9c9 !important;
+    color: #474545;
+    border-radius: 50%;
+    font-size: 15px  !important;
+    margin: 0 !important;
+    transition: 0.5s;
+}
+::ng-deep .p-carousel .p-carousel-content .p-carousel-next:hover {
+    background-color: #474545 !important;
+    color: white;
+    border-radius: 50%;
+    font-size: 15px  !important;
+    margin: 0 !important    ;
+}
+#carH {
+    color: #474545 !important;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#carH:hover {
+    color: #07aef5 !important;
+}
+fa-icon {
+    margin-left: 15px;
+}
+
+@media screen and (min-width:1422px) and (max-width:1514px) {
+    .product-image {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:865px) and (max-width: 1063px) {
+    .product-image {
+        width: 250px;
+    }
+}
+@media screen and (min-width: 546px) and (max-width: 616px ) {
+    .product-image {
+        width: 270px;
+    }
+}
+@media screen and (max-width: 545px) {
+    p-carousel {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 498px) {
+    p-carousel {
+        width: 100%;
+    }
+    .product-image {
+        width: 240px;
+    }
+    h1 {
+        font-size: clamp(30px, 2.12879191059074vw, 46px)!important;
+    }
+}
+@media screen and (max-width: 396px) {
+    .product-image {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1338px) {
+    section {
+        text-align: center;
+    }
+    #carH {
+        margin-left: 0;
+    }
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p-carousel {
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

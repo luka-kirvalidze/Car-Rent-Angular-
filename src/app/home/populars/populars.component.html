@@ -1,0 +1,30 @@
+<section>
+    <h1 >Quick Recommendatios:</h1>
+    <div id="inSect">
+
+        <div class="card">
+            <img class="card-img-top" [src]="el?.imageUrl1" alt="Card image cap">
+            <div class="card-body plus">
+                <div id="inCB">
+                    <h5 class="card-title">{{el?.brand}} {{el?.model}}</h5>
+                    <p class="card-text">${{el?.price}}/Day</p>
+                </div>
+                <button class="btn btn-primary">Coming soon</button>
+            </div>
+        </div>
+
+
+
+        <p-carousel [value]="fullRecieved" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" >
+          <ng-template pTemplate="header">
+            <h4 id="carH" routerLink="/Cars">See All Cars <fa-icon [icon]="arrowIcon"></fa-icon> </h4>
+          </ng-template>
+          <ng-template let-product pTemplate="item">
+            <div class="product-item" style="width:100% ">
+                <img [src]="product.imageUrl1" [alt]="product.brand" class="product-image"/>
+            </div>
+          </ng-template>
+        </p-carousel>
+
+    </div>
+</section>

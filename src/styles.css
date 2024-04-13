@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: MyFont;
+    src: url(./assets/fonts/Rubik-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: MyFont2;
+    src: url(./assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: MyFont3;
+    src: url(./assets/fonts/silkscreen/Silkscreen-Regular.ttf) format("truetype");
+}

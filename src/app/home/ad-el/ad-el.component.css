@@ -1,0 +1,126 @@
+p {
+    font-size: clamp(33px, 4.167vw, 100px);
+}
+.diffColor{
+    color: #07aef5;
+    /* margin-bottom: -100px; */
+}
+h5 {
+    font-size: clamp(20px, 1.042vw, 30px);
+    color: #878484;
+    margin-top: 30px;
+    /* background-color: green; */
+    width: 410px;
+}
+h1 {
+    font-size: clamp(20px, 1.647489539748954vw, 40px);
+}
+.btn {
+    width: 120px;
+    border-radius: 75px;
+    transition: ease 0.5s;
+    font-size: clamp(13px,  0.8368200836820083vw, 20px) ;
+}
+.plus {
+    width: 150px;
+    margin-left: 25px;
+    font-size: clamp(13px,  0.8368200836820083vw, 20px) ;
+}
+.buttonsec {
+    /* background-color: red; */
+    width: clamp(300px, 15.690376569037657vw, 400px);
+    margin-top: 30px;
+}
+section {
+    /* background-color: yellow; */
+    width: clamp(200px, 26.15062761506276vw, 700px);
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+video {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-left: -100px;
+    border-radius: 30px;
+    position: absolute;
+    width: clamp(350px, 36.61087866108787vw, 720px);
+    height: clamp(200px, 20.92050209205021vw, 420px);
+}
+
+#afterEnabled {
+    /* opacity: 0; */
+    width: clamp(200px,  21.443514644351463vw, 500px);
+    display: none;
+}
+
+.slideSecRight {
+    animation-name: slideSecRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes slideSecRight {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1228px) {
+    /* section {
+        background-color: green;
+    } */
+    #afterDis {
+        text-align: center;
+        /* background-color: red; */
+        width: clamp(277px, 15.690376569037657vw, 400px);
+    }
+    h5 {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 804px) {
+    .buttonsec {    
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: clamp(100px, 15.690376569037657vw, 400px);
+        /* background-color: green; */
+    }
+    .plus {
+        margin-top: 15px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn {
+        width: auto;
+    }
+    #afterDis {
+        display: none;
+    }
+    #afterEnabled{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #afterEnh5 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

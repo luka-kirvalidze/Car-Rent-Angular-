@@ -1,0 +1,29 @@
+section {
+    background-size: cover;
+    height: 100vh;
+    font-family: MyFont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h5 {
+    z-index: 100;
+    font-size: 30px;
+}
+h1 {
+    z-index: 100;
+    font-size: 70px;
+}
+button {
+    z-index: 100;
+}

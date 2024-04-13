@@ -1,0 +1,21 @@
+<section>
+
+    <p-carousel [showNavigators]="false" [autoplayInterval]="5000" [value]="userArray?.data" [circular]="true" [numVisible]="1" [numScroll]="1" [responsiveOptions]="responsiveOptions" >
+        <ng-template let-user pTemplate="item">
+            <div class="content">
+                <div class="content-item">
+                    <div class="outImg">
+                        <img [src]="user.avatar" [alt]="user.first_name" class="images">
+                        <div id="commas">
+                            <fa-icon [icon]="commaIcon"></fa-icon>
+                        </div>
+                    </div>
+                    <h4>,,{{user.review}}''</h4>
+                    <h5>-{{user.first_name}} {{user.last_name}}</h5>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+    
+
+</section>

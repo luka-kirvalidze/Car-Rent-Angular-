@@ -1,0 +1,36 @@
+.contact-form {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    margin-top: 50px;
+    width: 180px;
+    transition: .5s;
+    border-radius: 75px;
+}
+.btn:hover {
+    background-color: rgb(68, 68, 68);
+    border: 1px solid transparent;
+}
+.form-group {
+    margin-top: 20px;
+    width: 60%;
+    font-family: MyFont;
+    font-size: 20px;
+}
+input {
+    text-align: center;
+}
+textarea {
+    text-align: center;
+}
+label {
+    margin-bottom: 0px;
+}
+form {
+    margin-bottom: 170px;
+}

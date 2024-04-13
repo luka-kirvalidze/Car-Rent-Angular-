@@ -1,0 +1,80 @@
+/* * {
+    overflow-x: hidden;
+} */
+#sec1 {
+    display: flex;
+    /* background-color: purple; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    margin-top: 100px;
+    /* background-color: red; */
+}
+app-tutor-comp {
+    margin-top: 7%;
+    margin-right: auto;
+    margin-left: auto;
+}
+app-carlog2 {
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rebeccapurple; */
+}
+app-ad-el {
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 100;
+}
+app-carlog1 {
+    margin-left: auto;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1567px) {
+    #sec2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 731px) and (max-width: 1228px) {
+    #sec1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    app-carlog1 {
+        margin-top: 20px;
+        margin-right: auto;
+    }
+    app-ad-el {
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 730px) {
+    #sec1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        /* background-color: yellow; */
+    }
+    app-carlog1 {
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        transform: translateX(-10%);
+    }
+    app-ad-el {
+        margin-left: auto;
+    }
+}

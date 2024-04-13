@@ -1,0 +1,28 @@
+<nav class="navbar  navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <img src="assets/logo.png" routerLink="/" alt="image" class="navbar-brand">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav slideIn me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" id="home" routerLink="/" [routerLinkActiveOptions]={exact:true} routerLinkActive="active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/AboutUs" routerLinkActive="active" id="aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Cars" routerLinkActive="active" id="cars">Car Catalogue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/ContactUs" routerLinkActive="active" id="contact">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex slideRight" role="search">
+          <button routerLink="/SignIn" class="form-control me-2 plus">Sign In</button>
+          <button routerLink="/SignUp" class="btn" id="pluser" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,47 @@
+h1 {
+    font-size: 70px;
+    font-weight: 500;
+}
+p {
+    font-size: 27px;
+    margin-top: 30px;
+}
+section {
+    font-family: MyFont;
+    /* background-color: rebeccapurple; */
+    text-align: center;
+}
+@media screen and (max-width: 999px){
+    p {
+        font-size: clamp(20px, 1.3020833333333333vw, 26px);
+        width: clamp(300px, 20.833333333333332vw 401px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 627px){
+    p {
+        font-size: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 582px){
+    h1 {
+        /* background-color: red; */
+        font-size: clamp(40px, 3.6458333333333335vw, 71px);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 361){
+    h1 {
+        /* background-color: red; */
+        font-size: 25px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

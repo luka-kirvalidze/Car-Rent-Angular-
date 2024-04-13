@@ -1,0 +1,24 @@
+<div class="gsap1" id="header">
+    <h1>მანქანები თქვენი კრიტერიუმებით წარმატებით გაიფილტრა! <br> Vehicles with your criteria have been successfully filtered!</h1>
+    <div id="inHeader">
+        <h1>ყველა მანქანის სანახავად დააჭირე</h1>
+        <button routerLink="/Cars" class="btn btn-warning">აქ</button>
+    </div>
+</div>
+<section class="gsap2">
+    <div *ngFor="let car of data" class="card" style="width: 18rem;">
+      <img class="card-img-top" [src]="car.imageUrl1" [alt]="car.imageUrl3">
+      <div class="card-body">
+        <div class="bord"></div>
+        <h5 class="card-title">{{car.brand}} {{car.model}}</h5>
+        <p class="card-text">
+          <fa-icon [icon]="person"></fa-icon> : {{car.capacity}}
+        </p>
+        <p>ქალაქი/City: {{car.city}}</p>
+        <p>გამოშვების წელი/Release year: {{car.year}}</p>
+        <div class="butdi">
+          <a (click)="clicker(car)" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+<section >
+    <div id="afterDis">
+        <h1><p class="diffColor">Need A Ride?</p>Choose Your <br> Comfort. </h1>
+        <h5>Best car rent service with guaranteed quality.</h5>
+    </div>
+    <div id="afterEnabled">
+        <p class="diffColor">Need A Ride?</p>
+        <h1 class="afterEnH1">Choose Your</h1>
+        <h1 class="afterEnH1"> Comfort</h1>
+        <h5 id="afterEnh5">Best car rent service with guaranteed quality.</h5>
+    </div>
+    <div class="buttonsec">
+        <button type="button" routerLink="/ContactUs" class="btn btn-outline-dark">Contact Us</button>
+        <button (click)="playVideo()" type="button" class="btn btn-outline-dark plus"><fa-icon [icon]="faVideo"></fa-icon> Watch Video </button>
+    </div>
+</section>
+
+<video *ngIf="vidPlay" controls src="assets/ad.mp4"  height="cover" width="1000"></video>

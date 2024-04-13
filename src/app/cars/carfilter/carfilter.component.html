@@ -1,0 +1,29 @@
+<section>
+    <div>
+        <label for="locationinp">
+            Location: <br> 
+            <fa-icon [icon]="locationIc"></fa-icon>
+            <input type="text" [(ngModel)]="inpLocation" id="locationinp" placeholder="Choose Location">
+        </label>
+
+        <label for="carinp">
+            Car Capacity: <br> 
+            <fa-icon [icon]="carIcon"></fa-icon>
+            <input [(ngModel)]="inpCapacity" type="text" id="carinp" placeholder="Choose capacity" required>
+        </label>
+
+        <label for="startyearinp">
+            From (Year): <br> 
+            <fa-icon [icon]="calendarIcon"></fa-icon>
+            <input [(ngModel)]="startYear" type="number" id="startyearinp" placeholder="Enter Year">
+        </label>
+
+        <label for="endyearinp">
+            To (Year): <br> 
+            <fa-icon [icon]="calendarIcon"></fa-icon>
+            <input [(ngModel)]="endYear"  type="number" id="endyearinp" placeholder="Enter Year">
+        </label>
+    </div>
+    <!-- <button (click)="linkCreator()" routerLink="/filteredCars/:{{filLink}}" class="btn btn-primary">Search</button> -->
+    <button (click)="linkCreator()" class="btn btn-primary">Search</button>
+</section>

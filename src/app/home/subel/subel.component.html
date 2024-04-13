@@ -1,0 +1,24 @@
+<section>
+    <h1>Get News About Us</h1>
+    <div class="forms">
+        <div class="name">
+            <label for="fullName">Your Name</label>
+            <div class="forinpicon">
+                <div class="icon">
+                    <fa-icon [icon]="userIcon"></fa-icon>
+                </div>
+                <input [(ngModel)]="userName" type="text" id="fullName" placeholder="Enter your full name">
+            </div>
+        </div>
+        <div class="email">
+            <label for="emailInp">Your Email</label>
+            <div class="forinpicon">
+                <div class="icon">
+                    <fa-icon [icon]="emailIcon"></fa-icon>
+                </div>
+                <input [(ngModel)]="userEmail" type="email" id="emailInp" placeholder="Enter your email address">
+            </div>
+        </div>
+        <button (click)="alerter()" type="button" class="btn btn-primary">Subscribe</button>
+    </div>
+</section>
